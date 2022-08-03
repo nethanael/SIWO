@@ -109,91 +109,95 @@
 				<!-- (row_!Centro!) -->
 				<span class="text-center"><h3>Edici&oacute;n completa</h3></span>
 				<span class="text-center"><h5>Edici&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h5></span>
-				<table class="table table-sm table-bordered">	
-					<thead class="thead-light">
+				<div class = "col-12 mi_col table-responsive">
+                    <table class="table table-sm table-bordered">	
+                        <thead class="thead-light">
+                                <tr>
+                                    <th colspan="6">Detalles de la credencial:</th>
+                                </tr>
+                        </thead>
                             <tr>
-                                <th colspan="6">Detalles de la credencial:</th>
+                                <td class="table-primary">Credencial:</td>  
+                                <td><?php echo $credencial;?></td>
+                                <td class="table-primary">Contrato:</td>  
+                                <td><?php echo $numero_contrato;?></td>
+                                <td class="table-primary">Tipo de C&eacute;dula:</td>  
+                                <td><?php echo $tipo_afiliado;?></td>
                             </tr>
-                    </thead>
-					    <tr>
-                            <td class="table-primary">Credencial:</td>  
-                            <td><?php echo $credencial;?></td>
-                            <td class="table-primary">Contrato:</td>  
-                            <td><?php echo $numero_contrato;?></td>
-                            <td class="table-primary">Tipo de C&eacute;dula:</td>  
-                            <td><?php echo $tipo_afiliado;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-primary">C&eacute;dula:</td>  
-                            <td><?php echo $cedula;?></td>
-                            <td class="table-primary">Nombre:</td>  
-                            <td><?php echo $nombre_razon_social;?></td>
-                            <td class="table-primary">Actividad Comercial:</td>  
-                            <td><?php echo $actividad_comercial;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-primary">Tel&eacute;fono M&oacute;vil:</td>  
-                            <td><?php echo $telefono_movil;?></td>
-                            <td class="table-primary">Tel&eacute;fono Fijo:</td>  
-                            <td><?php echo $telefono_fijo;?></td>
-                            <td class="table-primary">Tipo de Negocio:</td>  
-                            <td><?php echo $tipo_negocio;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-primary">Email:</td>  
-                            <td colspan="5"><?php echo $email;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td class="table-success">Provincia:</td>  
-                            <td><?php echo $provincia;?></td>
-                            <td class="table-success">Cant&oacute;n:</td>  
-                            <td><?php echo $canton;?></td>
-                            <td class="table-success">Distrito:</td>  
-                            <td><?php echo $distrito;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-success">Direcci&oacute;n:</td>  
-                            <td colspan="5"><?php echo $direccion_exacta;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td class="table-info">Info. Medica:</td>  
-                            <td colspan="2"><?php echo $informacion_medica;?></td>
-                            <td class="table-info">Antec. Medicos:</td>  
-                            <td colspan="2"><?php echo $antecedentes_medicos;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-info">Observaciones:</td>  
-                            <td colspan="5"><?php echo $observaciones;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td class="table-warning">Veh&iacute;culo:</td>  
-                            <td><?php echo $vehiculo;?></td>
-                            <td class="table-warning">Flotilla:</td>  
-                            <td><?php echo $flotilla;?></td>
-                            <td class="table-warning">placas:</td>  
-                            <td><?php echo $placas;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-warning">&Aacute;rea Protegida:</td>  
-                            <td colspan=""><?php echo $area_protegida;?></td>
-                            <td class="table-warning">Hogar Protegido:</td>  
-                            <td colspan=""><?php echo $hogar_protegido;?></td>
-                            <td class="table-warning">Fecha Afiliaci&oacute;n:</td>  
-                            <td colspan=""><?php echo $fecha_afiliacion;?></td>
-                        </tr>
-                        <tr>
-                            <td colspan="6"><a href="../editar_credencial_2.php?superdato=<?php echo $credencial;?>">Volver</a></td>
-                        </tr>
-				</table>
+                            <tr>
+                                <td class="table-primary">C&eacute;dula:</td>  
+                                <td><?php echo $cedula;?></td>
+                                <td class="table-primary">Nombre:</td>  
+                                <td><?php echo $nombre_razon_social;?></td>
+                                <td class="table-primary">Actividad Comercial:</td>  
+                                <td><?php echo $actividad_comercial;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-primary">Tel&eacute;fono M&oacute;vil:</td>  
+                                <td><?php echo $telefono_movil;?></td>
+                                <td class="table-primary">Tel&eacute;fono Fijo:</td>  
+                                <td><?php echo $telefono_fijo;?></td>
+                                <td class="table-primary">Tipo de Negocio:</td>  
+                                <td><?php echo $tipo_negocio;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-primary">Email:</td>  
+                                <td colspan="5"><?php echo $email;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td class="table-success">Provincia:</td>  
+                                <td><?php echo $provincia;?></td>
+                                <td class="table-success">Cant&oacute;n:</td>  
+                                <td><?php echo $canton;?></td>
+                                <td class="table-success">Distrito:</td>  
+                                <td><?php echo $distrito;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Direcci&oacute;n:</td>  
+                                <td colspan="5"><?php echo $direccion_exacta;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td class="table-info">Info. Medica:</td>  
+                                <td colspan="2"><?php echo $informacion_medica;?></td>
+                                <td class="table-info">Antec. Medicos:</td>  
+                                <td colspan="2"><?php echo $antecedentes_medicos;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-info">Observaciones:</td>  
+                                <td colspan="5"><?php echo $observaciones;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Veh&iacute;culo:</td>  
+                                <td><?php echo $vehiculo;?></td>
+                                <td class="table-warning">Flotilla:</td>  
+                                <td><?php echo $flotilla;?></td>
+                                <td class="table-warning">placas:</td>  
+                                <td><?php echo $placas;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">&Aacute;rea Protegida:</td>  
+                                <td colspan=""><?php echo $area_protegida;?></td>
+                                <td class="table-warning">Hogar Protegido:</td>  
+                                <td colspan=""><?php echo $hogar_protegido;?></td>
+                                <td class="table-warning">Fecha Afiliaci&oacute;n:</td>  
+                                <td colspan=""><?php echo $fecha_afiliacion;?></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="6"><a href="../editar_credencial_2.php?superdato=<?php echo $credencial;?>">Volver</a></td>
+                            </tr>
+                    </table>
+                </div>
 			</div>
     	</div>
 

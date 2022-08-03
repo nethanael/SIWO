@@ -64,7 +64,7 @@
 
 
 		<div class = "row justify-content-center mi_row">
-			<div class = "table-responsive">
+			<div class = "col-12 mi-col table-responsive">
 				<!-- (row_!Centro!) -->
                 <table class="table table-sm table-striped">
                     <thead class="thead-light">

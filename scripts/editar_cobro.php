@@ -120,7 +120,8 @@
 				<!-- (row_!Centro!) -->
 				<span class="text-center"><h3>Edici&oacute;n completa</h3></span>
 				<span class="text-center"><h5>Edici&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h5></span>
-				<table class="table table-sm table-bordered">
+				<div class = "col-12 mi_col table-responsive">
+                    <table class="table table-sm table-bordered">
                         <thead class="thead-light">
                             <tr>
                                 <th colspan="6">Resumen de datos en la base de datos:</th>
@@ -225,6 +226,7 @@
                             <td colspan="6"><a href="../editar_credencial_2.php?superdato=<?php echo $credencial;?>">Volver</a></td>
                         </tr>
                     </table>
+                </div>
 			</div>
     	</div>
 

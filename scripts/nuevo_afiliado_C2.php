@@ -124,20 +124,13 @@
 	    <?php //include_once('../includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-4 mi_col">
-				<!-- (row_!Centro!) -->
+		<div class = "col-8 mi_col">
 				<span class="text-center"><h3>Nueva afiliaci&oacute;n registrada</h3></span>
-				<table class="table table-bordered">
-					<tr>
-						<td></td>
-						<td><img src="../imgs/crear_act.png"></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Afiliaci&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></td>
-						<td></td>
-					</tr>
+				<span class="text-center"><h6>Afiliaci&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h3></span>
+            </div>
+			<div class = "col-8 mi_col table-responsive">
+				<!-- (row_!Centro!) -->
+				<table class="table table-sm table-bordered">
 					<tr>
 						<td></td>
 						<td><a href="../nuevo_beneficiario_A.php"><h4>Agregar Beneficiarios</h4></a></td>

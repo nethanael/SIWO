@@ -120,6 +120,7 @@
                         <td class="<?php echo $miclase;?>"><small><?php echo $importante_2;?></small></td>
                     </tr>
                 </table>
+                <div class = "col-12 mi_col table-responsive">
                     <table class="table table-sm table-bordered">
                         <thead class="thead-light">
                             <tr>
@@ -209,6 +210,7 @@
                             <td colspan="6"><a href="editar_credencial_2.php?superdato=<?php echo $credencial;?>">Volver y no eliminar.</a></td>
                         </tr>
                     </table>
+                </div>
             </div>
         </div>
 

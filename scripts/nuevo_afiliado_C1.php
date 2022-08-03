@@ -203,7 +203,6 @@
             </div>
 			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
-				
 				<table class="table table-sm table-bordered">
 					<tr>
 						<td></td>

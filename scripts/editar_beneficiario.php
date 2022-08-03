@@ -84,73 +84,75 @@
 	    <?php //include_once('../includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col ">
 				<!-- (row_!Centro!) -->
 				<span class="text-center"><h3>Edici&oacute;n completa</h3></span>
 				<span class="text-center"><h5>Edici&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h5></span>
-                <table class="table table-sm table-bordered">
-                        <thead class="thead-light">
+                <div class = "col-12 mi_col table-responsive">
+                    <table class="table table-sm table-bordered">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="6">Detalles del beneficiario a editar:</th>
+                                </tr>
+                            </thead>
                             <tr>
-                                <th colspan="6">Detalles del beneficiario a editar:</th>
+                                <td class="table-primary">Codigo Sistema:</td>  
+                                <td><?php echo $codigo_sistema;?></td>
+                                <td class="table-primary">Credencial:</td>  
+                                <td><?php echo $credencial;?></td>
+                                <td class="table-primary">Contrato:</td>  
+                                <td><?php echo $numero_contrato;?></td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td class="table-primary">Codigo Sistema:</td>  
-                            <td><?php echo $codigo_sistema;?></td>
-                            <td class="table-primary">Credencial:</td>  
-                            <td><?php echo $credencial;?></td>
-                            <td class="table-primary">Contrato:</td>  
-                            <td><?php echo $numero_contrato;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-primary">C&eacute;dula:</td>  
-                            <td><?php echo $cedula;?></td>
-                            <td class="table-primary">Nombre:</td>  
-                            <td><?php echo $nombre;?></td>
-                            <td class="table-primary">G&eacute;nero:</td>  
-                            <td><?php echo $genero;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-primary">Tel&eacute;fono M&oacute;vil:</td>  
-                            <td><?php echo $telefono_movil;?></td>
-                            <td class="table-primary">Tel&eacute;fono Fijo:</td>  
-                            <td><?php echo $telefono_fijo;?></td>
-                            <td class="table-primary">Fecha Nacimiento:</td>  
-                            <td><?php echo $fecha_nacimiento;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td class="table-success">*Provincia:</td>  
-                            <td><?php echo $provincia;?></td>
-                            <td class="table-success">*Cant&oacute;n:</td>  
-                            <td><?php echo $canton;?></td>
-                            <td class="table-success">*Distrito:</td>  
-                            <td><?php echo $distrito;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-success">*Direcci&oacute;n:</td>  
-                            <td colspan="5"><?php echo $direccion_exacta;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td class="table-info">Antec. Medicos:</td>  
-                            <td colspan="5"><?php echo $antecedentes_medicos;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-info">Observaciones:</td>  
-                            <td colspan="5"><?php echo $observaciones;?></td>
-                        </tr>
-                        <tr>
-                            <td class="table-secondary" colspan="6"></td> 
-                        </tr>
-                        <tr>
-                            <td colspan="6"><a href="../editar_beneficiarios_1.php?superdato=<?php echo $credencial;?>&superdato2=<?php echo $numero_contrato;?>">Volver</a></td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td class="table-primary">C&eacute;dula:</td>  
+                                <td><?php echo $cedula;?></td>
+                                <td class="table-primary">Nombre:</td>  
+                                <td><?php echo $nombre;?></td>
+                                <td class="table-primary">G&eacute;nero:</td>  
+                                <td><?php echo $genero;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-primary">Tel&eacute;fono M&oacute;vil:</td>  
+                                <td><?php echo $telefono_movil;?></td>
+                                <td class="table-primary">Tel&eacute;fono Fijo:</td>  
+                                <td><?php echo $telefono_fijo;?></td>
+                                <td class="table-primary">Fecha Nacimiento:</td>  
+                                <td><?php echo $fecha_nacimiento;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td class="table-success">*Provincia:</td>  
+                                <td><?php echo $provincia;?></td>
+                                <td class="table-success">*Cant&oacute;n:</td>  
+                                <td><?php echo $canton;?></td>
+                                <td class="table-success">*Distrito:</td>  
+                                <td><?php echo $distrito;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">*Direcci&oacute;n:</td>  
+                                <td colspan="5"><?php echo $direccion_exacta;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td class="table-info">Antec. Medicos:</td>  
+                                <td colspan="5"><?php echo $antecedentes_medicos;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-info">Observaciones:</td>  
+                                <td colspan="5"><?php echo $observaciones;?></td>
+                            </tr>
+                            <tr>
+                                <td class="table-secondary" colspan="6"></td> 
+                            </tr>
+                            <tr>
+                                <td colspan="6"><a href="../editar_beneficiarios_1.php?superdato=<?php echo $credencial;?>&superdato2=<?php echo $numero_contrato;?>">Volver</a></td>
+                            </tr>
+                        </table>
+                    </div>
 			</div>
     	</div>
 

@@ -58,10 +58,12 @@
 		</div>
 		<div class = "row justify-content-center mi_row">
 			<div class="col-6 justify-content-center mi_col bg-secondary text-white">
+			<div class = "d-none d-lg-block">
 				<p class="text-center font-weight-light">Este es un sistema automatizado para la afiliaci&oacute;n y control
 				de clientes de la empresa Trasmedic Ambulancia SA. El nombre y apellidos de cada 
 				usuario a sido registrado adecuadamente, por lo tanto, utilizar el sistema responsablemente. No se permite 
 				el pr&eacute;stamo de usuarios y contrase&ntilde;as. Consultas y sugerencias a: pabloh@kamalacr.com </p>
+			</div>
 			</div>
 		</div>
 

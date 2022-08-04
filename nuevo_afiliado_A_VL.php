@@ -30,45 +30,20 @@
 			<div class = "col-6 mi_col">
 				<!-- (row_!Centro!) -->
                 <form name="" method="post" action="scripts/afiliacion_VL.php"> 
-                    <table class="table table-striped">
-                        <thead class="thead-light">
-                            <tr>
-                                <th colspan="2">Nueva afiliaci&oacute;n:</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <span class="lead text-info">
-                                    Definir el tipo de Afiliado, c&eacute;dula f&iacute;sica o c&eacute;dula Jur&iacute;dica.
-                                    </span>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <img src="imgs/crear_act.png"><br>
-                                <span class="text-danger">
-                                    <?php echo $_SESSION[''];?>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Tipo de C&eacute;dula:</td>
-                            <td>    
-                                <select id="tipo_cedula" name="tipo_cedula">
-                                    <option value="fisica">F&iacute;sica</option>
-                                    <option value="juridica">Jur&iacute;dica</option>
-                                </select> 
-                            </td>
-                        </tr>
-                    
-                        <tr>
-                                <td colspan="2"><p class="text-center"><input type="submit" name="Submit" value="Continuar"></p></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><a href="index.php">Volver</a></td>
-                        </tr>
-                    </table>
+                    <p class="text-center h5">Nueva afiliaci&oacute;n:</p>
+                    <p class="text-center font-italic text-info">Definir el tipo de Afiliado, c&eacute;dula f&iacute;sica o c&eacute;dula Jur&iacute;dica.</p>
+                    <p class="text-center d-none d-lg-block">
+                        <img src="imgs/crear_act.png"><br>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="tipo_cedula">Tipo de C&eacute;dula:</label>
+                        <select class="form-control" id="tipo_cedula" name="tipo_cedula">
+                            <option value="fisica">F&iacute;sica</option>
+                            <option value="juridica">Jur&iacute;dica</option>
+                        </select>
+                        <input type="submit" class="form-control" name="Submit" value="Continuar"> 
+                    </div>
                 </form>
             </div>
         </div>

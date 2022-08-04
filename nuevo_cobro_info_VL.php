@@ -29,10 +29,10 @@
 	    <?php include_once('includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <form name="" method="post" action="scripts/nuevo_cobro_info_VL.php"> 
-                    <table class="table">
+                    <table class="table table-sm table-striped">
                         <thead class="thead-light">
                             <tr>
                                 <th colspan="4">Informaci&oacute;n para cobro:</th>

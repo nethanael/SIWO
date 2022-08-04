@@ -63,7 +63,7 @@
 	    <?php include_once('includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col table-responsive"">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <form name="" method="post" action="scripts/nuevo_beneficiario.php"> 
                     <table class="table table-sm table-striped">

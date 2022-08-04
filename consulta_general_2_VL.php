@@ -75,7 +75,7 @@
 		<?php include_once('includes/main_menu.php');?>
           
         <div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <table class="table table-sm table-striped">
                     <thead class="thead-light">
@@ -121,6 +121,7 @@
                         <td class="<?php echo $miclase;?>"><small><?php echo $importante_2;?></small></td>
                     </tr>
                 </table>
+                <div class = "col-12 mi_col table-responsive">
                     <table class="table table-sm table-bordered">
                         <thead class="thead-light">
                             <tr>
@@ -209,6 +210,7 @@
                             <td colspan="6"><a href="index.php">Volver</a></td>
                         </tr>
                     </table>
+                    </div>
             </div>
         </div>
 

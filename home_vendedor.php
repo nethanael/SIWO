@@ -30,22 +30,12 @@
 		<div class = "row justify-content-center mi_row">
 			<div class = "col-6 mi_col">
 				<!-- (row_!Centro!) -->
-					<table class="table">
-						<thead class="thead-light">
-							<tr>
-								<th colspan="2"><p class="text-center h5">Men&uacute; Principal (Vendedor Limitado):</p></th>
-							</tr>
-						</thead>
-						<tr>
-							<td colspan="2">
-								<p class="text-center">Gesti&oacute;n de Credenciales</p>
-							</td>
-						</tr>
-						<tr>
-							<td><p class="text-center"><a class="btn btn-info" href="nuevo_afiliado_A_VL.php">Nueva Afiliaci&oacute;n</a></p></td>
-							<td><p class="text-center"><a class="btn btn-info" href="consulta_general_VL.php">Consulta Credenciales</a></p></td>
-						</tr>
-					</table>
+				<p class="text-center h5">Men&uacute; Principal (Vendedor Limitado):</p>
+				<p class="text-center">Gesti&oacute;n de Credenciales</p>
+                <p class="text-center font-weight-light">
+                    <a class="btn btn-info" href="nuevo_afiliado_A_VL.php">Nueva Afiliaci&oacute;n</a>
+                    <a class="btn btn-info" href="consulta_general_VL.php">Consulta Credenciales</a>
+                </p>
 			</div>
 		</div>
 

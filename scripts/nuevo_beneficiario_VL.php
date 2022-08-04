@@ -183,15 +183,10 @@
 	    <?php //include_once('../includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-4 mi_col">
+			<div class = "col-4 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
 				<span class="text-center"><h3>Nuevo beneficiario registrado</h3></span>
-				<table class="table table-bordered">
-					<tr>
-						<td></td>
-						<td><img src="../imgs/crear_act.png"></td>
-						<td></td>
-					</tr>
+				<table class="table table-sm table-bordered">
 					<tr>
 						<td></td>
 						<td>Beneficiario registrado con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></td>

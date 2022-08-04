@@ -124,7 +124,7 @@
 	    <?php //include_once('../includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-		<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<span class="text-center"><h3>Nueva afiliaci&oacute;n registrada</h3></span>
 				<span class="text-center"><h6>Afiliaci&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h3></span>
             </div>

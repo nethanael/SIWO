@@ -189,11 +189,6 @@
 				<table class="table table-sm table-bordered">
 					<tr>
 						<td></td>
-						<td><img src="../imgs/crear_act.png"></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
 						<td>Beneficiario registrado con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></td>
 						<td></td>
 					</tr>

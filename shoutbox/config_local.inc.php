@@ -13,10 +13,11 @@
 // Database settings
 //========================================================================================================
 
-  $db_server = "localhost";      // server name
+  $db_server = "localhost";           // server name
   $db_user = "trasmedic";             // user name
   $db_pass = "MSRdbbqkDyQ9jKWh";                 // user password
-  $db_name = "sistema_trasmedic";                 // database name
+  $db_name = "trasmedi_sistema";                 // database name
+
 
   // don't change unless you know what you're doing:
   $tbl_name = "Shoutbox";        // table name

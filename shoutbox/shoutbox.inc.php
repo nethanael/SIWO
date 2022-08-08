@@ -99,7 +99,7 @@ function checkKeyCode(e) {
 }
 //--> </script>
 <link rel="stylesheet" href="<?php echo $boxFolder; ?>shoutbox.css" type="text/css">
-<table border="0" cellspacing="0" cellpadding="0">
+<table class = "table" border="0" cellspacing="0" cellpadding="0">
 <form name="fShout" action="<?php echo $boxFolder; ?>shout.php" target="ShoutBox" method="post">
 <input type="hidden" name="sbID" value="<?php echo $_SESSION['msgID']; ?>">
 <input type="hidden" name="admin">

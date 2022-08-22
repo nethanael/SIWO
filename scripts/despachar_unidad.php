@@ -11,7 +11,7 @@ $tipo_despacho = $_POST["tipo_despacho"];
         case "emergencia":
             header("Location: ../despachar_unidad_B1.php");
             break;
-        case "juridica":
+        case "administrativo":
             header("Location: ../despachar_unidad_B2.php");
             break;
         default:

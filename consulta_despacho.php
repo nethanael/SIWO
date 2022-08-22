@@ -27,10 +27,10 @@
 	    <?php include_once('includes/main_menu.php');?>
           
         <div class = "row justify-content-center mi_row">
-			<div class = "col-6 mi_col">
+			<div class = "col-6 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <form name="" method="post" action="consulta_despacho_2.php"> 
-                    <table class="table table-striped">
+                    <table class="table table-striped ">
                         <thead class="thead-light">
                             <tr>
                                 <th colspan="2">Consulta de Despacho:</th>
@@ -46,7 +46,6 @@
                         <tr>
                             <td></td>
                             <td>
-                                <img src="imgs/crear_act.png"><br>
                                 <span class="text-danger">
                                     <?php echo $_SESSION[''];?>
                                 </span>

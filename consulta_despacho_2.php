@@ -76,7 +76,7 @@
 
 
 		<div class = "row justify-content-center mi_row">
-			<div class = "table-responsive">
+			<div class = "mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <table id="tablilla" class="table table-sm table-striped">
                     <thead class="thead-light">
@@ -260,7 +260,7 @@
 	</div>
 </body>
     <script>
-
+        
         var credencial = '<?=$credencial?>'; //esto pasa variables de php a javascript
         console.log(credencial); 
 

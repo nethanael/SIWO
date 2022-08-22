@@ -54,13 +54,11 @@
 		<link rel="stylesheet" href="css/test_borders.css">
 		<title>SIWO</title>
         <style>
-
-        .claseEspecial {
-            color:green;
-            background-color: yellow;
-            font-size: large;
-        }
-
+            .claseEspecial {
+                color:green;
+                background-color: yellow;
+                font-size: large;
+            }
         </style>
 	</head>
 <body>
@@ -70,7 +68,7 @@
 		<?php include_once('includes/main_menu.php');?>
           
         <div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
                 <form name="" method="post" action="scripts/intervenir_despacho.php"> 
                     <table class="table table-sm table-bordered">

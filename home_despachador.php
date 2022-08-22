@@ -32,7 +32,7 @@ include_once('includes/revisionUnidad.php');
 		<?php include_once('includes/main_menu.php');?>
 		
 		<div class = "row justify-content-center mi_row">
-			<div class = "col-6 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
 					<table class="table">
 						<thead class="thead-light">
@@ -59,7 +59,7 @@ include_once('includes/revisionUnidad.php');
 		</div>
 
 		<div class = "row justify-content-center mi_row">
-            <div class = "col-6 mi_col">
+            <div class = "col-8 mi_co table-responsive">
                     <?php include_once('shoutbox/shoutbox.inc.php');?>
             </div>
     	</div>

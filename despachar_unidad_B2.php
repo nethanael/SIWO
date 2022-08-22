@@ -38,7 +38,7 @@ include_once('includes/revisionUnidad.php');
     	<div class = "row justify-content-center mi_row">
 			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
-                <form name="" method="post" action="scripts/despachar_unidad_C1.php"> 
+                <form name="" method="post" action="scripts/despachar_unidad_C2.php"> 
                     <table class="table table-striped">
                         <thead class="thead-light">
                             <tr>
@@ -60,37 +60,6 @@ include_once('includes/revisionUnidad.php');
                             </td>
                         </tr>
                         <tr>
-                            <td>*Credencial:</td>
-                            <td> 
-                                TM-<input name="credencialA" type="text" id="credencialA" value="<?php echo $_SESSION['DESPACHO_TEMP_A1']; ?>" size="1" maxlength="10"> -
-                                <input name="credencialB" type="text" id="credencialB" value="<?php echo $_SESSION['DESPACHO_TEMP_A2']; ?>" size="1" maxlength="10">
-                            </td>
-                            <td>*Fecha:</td>
-                            <td>
-                                <input name="fecha_despacho" id="fecha_despacho" value="<?php echo $fecha; ?>" size="8" maxlength="40" readonly></input>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>*Nombre interesado:</td>
-                            <td> 
-                                <input name="nombre_interesado" type="text" id="nombre_interesado" value="<?php echo $_SESSION['DESPACHO_TEMP_B']; ?>" size="" maxlength="100">
-                            </td>
-                            <td>*Nombre paciente:</td>
-                            <td> 
-                                <input name="nombre_paciente" type="text" id="nombre_paciente" value="<?php echo $_SESSION['DESPACHO_TEMP_C']; ?>" size="" maxlength="100">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>*Tipo de Paciente:</td>
-                            <td> 
-                                <select name="tipo_paciente" id="tipo_paciente">
-                                    <option value="privado">privado</option>
-                                    <option value="CCSS">CCSS</option>
-                                    <option value="INS">INS</option>
-                                    <option value="ebais_biblica">EBAIS Biblica</option>
-                                    <option value="otro">otro</option>
-                                </select>
-                            </td>
                             <td>*Unidad:</td>
                             <td> 
                                 <select name="unidad" id="unidad">
@@ -100,6 +69,24 @@ include_once('includes/revisionUnidad.php');
                                     <option value="UPI">UPI</option>
                                 </select>
                             </td>
+                            <td>*Fecha:</td>
+                            <td>
+                                <input name="fecha_despacho" id="fecha_despacho" value="<?php echo $fecha; ?>" size="8" maxlength="40" readonly></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>*Conductor:</td>
+                            <td> 
+                                <input name="nombre_interesado" type="text" id="nombre_interesado" value="<?php echo $_SESSION['DESPACHO_TEMP_B']; ?>" size="" maxlength="100">
+                            </td>
+                            <td>Pasajero:</td>
+                            <td> 
+                                <input name="nombre_paciente" type="text" id="nombre_paciente" value="<?php echo $_SESSION['DESPACHO_TEMP_C']; ?>" size="" maxlength="100">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -116,16 +103,14 @@ include_once('includes/revisionUnidad.php');
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
 						</tr>
                         <tr>
-                            <td colspan="1">Diagn&oacute;stico:</td>
+                            <td colspan="1">*Motivo:</td>
                             <td colspan="3">
                             <input name="diagnostico" id="diagnostico" value="<?php echo $_SESSION['DESPACHO_TEMP_D']; ?>" size="65" maxlength="200"></input>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="1">*Direcci&oacute;n:</td>
-                            <td colspan="3">
-                                <input name="direccion" id="direccion" value="<?php echo $_SESSION['DESPACHO_TEMP_E']; ?>" size="65" maxlength="230"></input>
-                            </td>
+                            <td colspan="1"></td>
+                            <td colspan="3"></td>
                         </tr>
                         <tr>
                             <td colspan="1">*Destino:</td>
@@ -134,14 +119,10 @@ include_once('includes/revisionUnidad.php');
                             </td>
                         </tr>
                         <tr>
-                            <td>*Monto:</td>
-                            <td>
-                                <input name="monto" id="monto" value="<?php echo $_SESSION['DESPACHO_TEMP_G']; ?>" size="" maxlength="40"></input>
-                            </td>
-                            <td># Factura:</td>
-                            <td>
-                                <input name="factura" id="factura" value="<?php echo $_SESSION['DESPACHO_TEMP_H']; ?>" size="" maxlength="40"></input>
-                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>KM Salida:</td>
@@ -155,49 +136,12 @@ include_once('includes/revisionUnidad.php');
                         </tr>
                         <tr><td colspan="4">Tiempos:</td></tr>
                         <tr>
-                            <td>*Ingreso de Llamada:</td>
+                            <td>*Inicio:</td>
                             <td>
                                 <input name="tiempo_llamada" type="" id="tiempo_llamada" size="15" maxlength="100" value="<?php echo $ahora;?>" readonly>
                             </td>
-                            <td>*Despacho Unidad:</td>
-                            <td>
-                                <input name="tiempo_despacho" type="datetime-local" id="tiempo_despacho" size="8" maxlength="100">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Salida de Unidad:</td>
-                            <td>
-                                <input name="tiempo_salida_unidad" type="datetime-local" id="tiempo_salida_unidad" size="8" maxlength="100">
-                            </td>
-                            <td>Llegada a escena:</td>
-                            <td>
-                                <input name="tiempo_llegada_escena" type="datetime-local" id="tiempo_llegada_escena" size="8" maxlength="100">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Salida de escena:</td>
-                            <td>
-                                <input name="tiempo_salida_escena" type="datetime-local" id="tiempo_salida_escena" size="8" maxlength="100">
-                            </td>
-                            <td>Llegada hospital:</td>
-                            <td>
-                                <input name="tiempo_hospital" type="datetime-local" id="tiempo_hospital" size="8" maxlength="100">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Disponible:</td>
-                            <td>
-                                <input name="tiempo_disponible" type="datetime-local" id="tiempo_disponible" size="8" maxlength="100">
-                            </td>
-                            <td>*Prioridad:</td>
-                            <td>
-                                <select name="prioridad" id="prioridad">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td colspan="1">Observaciones:</td>

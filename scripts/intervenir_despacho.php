@@ -129,7 +129,7 @@
 	    <?php //include_once('../includes/main_menu.php');?>
 
     	<div class = "row justify-content-center mi_row">
-			<div class = "col-8 mi_col">
+			<div class = "col-8 mi_col table-responsive">
 				<!-- (row_!Centro!) -->
 				<span class="text-center"><h3>Intervenci&oacute;n completa</h3></span>
 				<span class="text-center"><h5>Intervenci&oacute;n realizada con &eacute;xito por <?php echo $_SESSION['NOMBRE'];?></h5></span>

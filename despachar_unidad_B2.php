@@ -67,6 +67,7 @@ include_once('includes/revisionUnidad.php');
                                     <option value="TARRAZU">TARRAZU</option>
                                     <option value="YURUSTI">YURUSTI</option>
                                     <option value="UPI">UPI</option>
+                                    <option value="IZTARU">IZTARU</option>
                                 </select>
                             </td>
                             <td>*Fecha:</td>
@@ -100,8 +101,14 @@ include_once('includes/revisionUnidad.php');
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("KAMUK"); ?>">KAMUK</span></p></td>
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("TARRAZU"); ?>">TARRAZU</span></p></td>
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("YURUSTI"); ?>">YURUSTI</span></p></td>
-							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
-						</tr>
+                            <td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text-center"><span class="badge badge-<?php revisionUnidad("IZTARU"); ?>">IZTARU</span></p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <tr>
                             <td colspan="1">*Motivo:</td>
                             <td colspan="3">
@@ -113,7 +120,7 @@ include_once('includes/revisionUnidad.php');
                             <td colspan="3"></td>
                         </tr>
                         <tr>
-                            <td colspan="1">*Destino:</td>
+                            <td colspan="1">Destino:</td>
                             <td colspan="3">
                                 <input name="destino" id="destino" value="<?php echo $_SESSION['DESPACHO_TEMP_F']; ?>" size="65" maxlength="230"></input>
                             </td>

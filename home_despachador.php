@@ -54,6 +54,12 @@ include_once('includes/revisionUnidad.php');
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("YURUSTI"); ?>">YURUSTI</span></p></td>
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
 						</tr>
+						<tr>
+                            <td><p class="text-center"><span class="badge badge-<?php revisionUnidad("IZTARU"); ?>">IZTARU</span></p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
 					</table>
 			</div>
 		</div>

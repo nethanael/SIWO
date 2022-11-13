@@ -1,6 +1,8 @@
 <?php
     session_start();
 
+    $fecha = date("Y-m-d");
+
     $codigo_despacho = $_POST['codigo_despacho'];
     $credencial = $_POST['credencial'];
     $unidad = $_POST['unidad'];
@@ -12,10 +14,10 @@
     $direccion = $_POST['direccion'];
     $diagnostico = $_POST['diagnostico'];
     $observaciones = $_POST['observaciones'];
-    $tiempo_salida_unidad = $_POST['tiempo_salida_unidad'];
-    $tiempo_llegada_escena = $_POST['tiempo_llegada_escena'];
-    $tiempo_salida_escena = $_POST['tiempo_salida_escena'];
-    $tiempo_llegada_hospital = $_POST['tiempo_llegada_hospital'];
+    $tiempo_salida_unidad = $fecha."T".$_POST['tiempo_salida_unidad'];
+    $tiempo_llegada_escena = $fecha."T".$_POST['tiempo_llegada_escena'];
+    $tiempo_salida_escena = $fecha."T".$_POST['tiempo_salida_escena'];
+    $tiempo_llegada_hospital = $fecha."T".$_POST['tiempo_llegada_hospital'];
     $estado = $_POST['estado'];
     $km_salida = $_POST['km_salida'];
     $km_entrada = $_POST['km_entrada'];
@@ -213,7 +215,8 @@
                             <td colspan=""><?php echo $despachador;?></td>
                         </tr>
                         <tr>
-                            <td colspan="6"><a href="../index.php">Volver</a></td>
+                            <td colspan="3"><a href="../consulta_despachos_abiertos.php">Despachos abiertos</a></td>
+                            <td colspan="3"><a href="../index.php">Volver a Principal</a></td>
                         </tr>
 				</table>
 			</div>

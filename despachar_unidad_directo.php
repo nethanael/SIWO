@@ -140,7 +140,7 @@ include_once('includes/revisionUnidad.php');
                             <td>*Nombre Credencial:</td>
                             <td> 
                                 <input 
-                                    name="nombre_credencial" 
+                                    name="nombre_interesado" 
                                     type="text" 
                                     id="nombre_interesado" 
                                     value="<?php echo $nombre_razon_social; ?>" 
@@ -165,6 +165,7 @@ include_once('includes/revisionUnidad.php');
                                     <option value="TARRAZU">TARRAZU</option>
                                     <option value="YURUSTI">YURUSTI</option>
                                     <option value="UPI">UPI</option>
+                                    <option value="IZTARU">IZTARU</option>
                                 </select>
                             </td>
                         </tr>
@@ -180,8 +181,14 @@ include_once('includes/revisionUnidad.php');
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("KAMUK"); ?>">KAMUK</span></p></td>
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("TARRAZU"); ?>">TARRAZU</span></p></td>
 							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("YURUSTI"); ?>">YURUSTI</span></p></td>
-							<td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
-						</tr>
+                            <td><p class="text-center"><span class="badge badge-<?php revisionUnidad("UPI"); ?>">UPI</span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text-center"><span class="badge badge-<?php revisionUnidad("IZTARU"); ?>">IZTARU</span></p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <tr>
                             <td colspan="1">Diagn&oacute;stico:</td>
                             <td colspan="3">
@@ -195,7 +202,7 @@ include_once('includes/revisionUnidad.php');
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="1">*Destino:</td>
+                            <td colspan="1">Destino:</td>
                             <td colspan="3">
                                 <input name="destino" id="destino" value="<?php echo $_SESSION['DESPACHO_TEMP_F']; ?>" size="65" maxlength="230"></input>
                             </td>
@@ -228,33 +235,33 @@ include_once('includes/revisionUnidad.php');
                             </td>
                             <td>*Despacho Unidad:</td>
                             <td>
-                                <input name="tiempo_despacho" type="datetime-local" id="tiempo_despacho" size="8" maxlength="100">
+                                <input name="tiempo_despacho" type="time" id="tiempo_despacho" size="8" maxlength="100">
                             </td>
                         </tr>
                         <tr>
                             <td>Salida de Unidad:</td>
                             <td>
-                                <input name="tiempo_salida_unidad" type="datetime-local" id="tiempo_salida_unidad" size="8" maxlength="100">
+                                <input name="tiempo_salida_unidad" type="time" id="tiempo_salida_unidad" size="8" maxlength="100">
                             </td>
                             <td>Llegada a escena:</td>
                             <td>
-                                <input name="tiempo_llegada_escena" type="datetime-local" id="tiempo_llegada_escena" size="8" maxlength="100">
+                                <input name="tiempo_llegada_escena" type="time" id="tiempo_llegada_escena" size="8" maxlength="100">
                             </td>
                         </tr>
                         <tr>
                             <td>Salida de escena:</td>
                             <td>
-                                <input name="tiempo_salida_escena" type="datetime-local" id="tiempo_salida_escena" size="8" maxlength="100">
+                                <input name="tiempo_salida_escena" type="time" id="tiempo_salida_escena" size="8" maxlength="100">
                             </td>
                             <td>Llegada hospital:</td>
                             <td>
-                                <input name="tiempo_hospital" type="datetime-local" id="tiempo_hospital" size="8" maxlength="100">
+                                <input name="tiempo_hospital" type="time" id="tiempo_hospital" size="8" maxlength="100">
                             </td>
                         </tr>
                         <tr>
                             <td>Disponible:</td>
                             <td>
-                                <input name="tiempo_disponible" type="datetime-local" id="tiempo_disponible" size="8" maxlength="100">
+                                <input name="tiempo_disponible" type="time" id="tiempo_disponible" size="8" maxlength="100">
                             </td>
                             <td>*Prioridad:</td>
                             <td>

@@ -163,7 +163,7 @@
                             </td>  
                             <td colspan="2">
                                 <span class="claseEspecial"><?php echo $tiempo_salida_unidad;?></span>
-                                <input name="tiempo_salida_unidad" type="datetime-local" id="tiempo_salida_unidad" size="8" maxlength="100">
+                                <input name="tiempo_salida_unidad" type="time" id="tiempo_salida_unidad" size="8" maxlength="100">
                                 <input type="checkbox" id="cambiar_salida_unidad" name="cambiar_salida_unidad" value=true>
                             </td>
                             <td class="table-info">
@@ -171,7 +171,7 @@
                             </td>  
                             <td colspan="2">
                                 <span class="claseEspecial"><?php echo $tiempo_llegada_escena;?></span>
-                                <input name="tiempo_llegada_escena" type="datetime-local" id="tiempo_llegada_escena" size="8" maxlength="100">
+                                <input name="tiempo_llegada_escena" type="time" id="tiempo_llegada_escena" size="8" maxlength="100">
                                 <input type="checkbox" id="cambiar_llegada_escena" name="cambiar_llegada_escena" value=true>
                             </td>
                         </tr>
@@ -181,7 +181,7 @@
                             </td>  
                             <td colspan="2">
                                 <span class="claseEspecial"><?php echo $tiempo_salida_escena;?></span>
-                                <input name="tiempo_salida_escena" type="datetime-local" id="tiempo_salida_escena" size="8" maxlength="100">
+                                <input name="tiempo_salida_escena" type="time" id="tiempo_salida_escena" size="8" maxlength="100">
                                 <input type="checkbox" id="cambiar_salida_escena" name="cambiar_salida_escena" value=true>
                             </td>
                             <td class="table-info">
@@ -189,7 +189,7 @@
                             </td>  
                             <td colspan="2">
                                 <span class="claseEspecial"><?php echo $tiempo_llegada_hospital;?></span>
-                                <input name="tiempo_llegada_hospital" type="datetime-local" id="tiempo_llegada_hospital" size="8" maxlength="100">
+                                <input name="tiempo_llegada_hospital" type="time" id="tiempo_llegada_hospital" size="8" maxlength="100">
                                 <input type="checkbox" id="cambiar_llegada_hospital" name="cambiar_llegada_hospital" value=true>
                             </td>
                         </tr>

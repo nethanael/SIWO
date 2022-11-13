@@ -16,12 +16,13 @@
     $destino = $_POST["destino"];
     $km_salida = $_POST["km_salida"];
     $km_entrada = $_POST["km_entrada"];
+
     $tiempo_llamada = $_POST["tiempo_llamada"];
     $tiempo_disponible = $_POST["tiempo_disponible"];
+    
     $observaciones = $_POST["observaciones"];
     
-    if ($nombre_interesado == '' || $nombre_paciente == '' 
-    || $unidad == '' || $destino == '' || $tiempo_llamada == '' ) 
+    if ($nombre_interesado == '' || $unidad == '' || $tiempo_llamada == '' ) 
 	{
 		$_SESSION['DESPACHO_ERROR'] = "¡Todos los campos marcados con * son obligatorios!";
 

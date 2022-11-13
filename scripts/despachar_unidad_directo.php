@@ -3,6 +3,7 @@
 
     $mes = date("m");
 	$ano = date("y");
+    $fecha = date("Y-m-d");
 
 	$despachador = $_SESSION['USUARIO'];
     $credencial = $_POST["credencial"];
@@ -10,7 +11,7 @@
     $estado = 'ABIERTO';
 
     $fecha_despacho = $_POST["fecha_despacho"];
-    $nombre_credencial = $_POST["nombre_credencial"];
+    $nombre_interesado = $_POST["nombre_interesado"];
     $nombre_paciente = $_POST["nombre_paciente"];
     $tipo_paciente = $_POST["tipo_paciente"];
     $unidad = $_POST["unidad"];
@@ -21,18 +22,45 @@
     $factura = $_POST["factura"];
     $km_salida = $_POST["km_salida"];
     $km_entrada = $_POST["km_entrada"];
+    
     $tiempo_llamada = $_POST["tiempo_llamada"];
-    $tiempo_despacho = $_POST["tiempo_despacho"];
-    $tiempo_salida_unidad = $_POST["tiempo_salida_unidad"];
-    $tiempo_llegada_escena = $_POST["tiempo_llegada_escena"];
-    $tiempo_salida_escena = $_POST["tiempo_salida_escena"];
-    $tiempo_hospital = $_POST["tiempo_hospital"];
-    $tiempo_disponible = $_POST["tiempo_disponible"];
+    $tiempo_despacho = $fecha."T".$_POST["tiempo_despacho"];
+
+    if($_POST["tiempo_salida_unidad"]){
+        $tiempo_salida_unidad = $fecha."T".$_POST["tiempo_salida_unidad"];
+    }else{
+        $tiempo_salida_unidad = "";
+    }
+
+    if($_POST["tiempo_llegada_escena"]){
+        $tiempo_llegada_escena = $fecha."T".$_POST["tiempo_llegada_escena"];
+    }else{
+        $tiempo_llegada_escena = "";
+    }
+
+    if($_POST["tiempo_salida_escena"]){
+        $tiempo_salida_escena = $fecha."T".$_POST["tiempo_salida_escena"];
+    }else{
+        $tiempo_salida_escena = "";
+    }
+
+    if($_POST["tiempo_hospital"]){
+        $tiempo_hospital = $fecha."T".$_POST["tiempo_hospital"];
+    }else{
+        $tiempo_hospital = "";
+    }
+    if($_POST["tiempo_disponible"]){
+        $tiempo_disponible = $fecha."T".$_POST["tiempo_disponible"];
+    }else{
+        $tiempo_disponible = "";
+    }
+
+    $tiempo_disponible = $fecha."T".$_POST["tiempo_disponible"];
     $prioridad = $_POST["prioridad"];
     $observaciones = $_POST["observaciones"];
     
-    if ($credencial == '' || $nombre_credencial == '' || $nombre_paciente == '' || $tipo_paciente == '' 
-    || $unidad == '' || $direccion == '' || $destino == '' || $tiempo_llamada == '' 
+    if ($credencial == '' || $nombre_interesado == '' || $nombre_paciente == '' || $tipo_paciente == '' 
+    || $unidad == '' || $direccion == '' || $tiempo_llamada == '' 
     || $prioridad == '' || $tiempo_despacho == '') 
 	{
 		$_SESSION['DESPACHO_ERROR'] = "¡Todos los campos marcados con * son obligatorios!";

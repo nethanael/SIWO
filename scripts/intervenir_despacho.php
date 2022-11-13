@@ -12,6 +12,7 @@
     $despachador = $_POST['despachador'];
     $prioridad = $_POST['prioridad'];
     $direccion = $_POST['direccion'];
+    $destino = $_POST['destino'];
     $diagnostico = $_POST['diagnostico'];
     $observaciones = $_POST['observaciones'];
     $tiempo_salida_unidad = $fecha."T".$_POST['tiempo_salida_unidad'];
@@ -40,7 +41,7 @@
 
         include '../includes/connection.php';
 
-        $query = "UPDATE despachos set direccion = '$direccion', diagnostico = '$diagnostico', 
+        $query = "UPDATE despachos set direccion = '$direccion', destino = '$destino', diagnostico = '$diagnostico', 
         observaciones = '$observaciones', km_entrada = '$km_entrada', km_salida = '$km_salida',
         estado = '$estado', tiempo_cierre = '$ahora' WHERE codigo_despacho LIKE '$codigo_despacho'";
 

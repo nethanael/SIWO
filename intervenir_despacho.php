@@ -136,7 +136,7 @@
                         </tr>
                         <tr>
                             <td class="table-success">
-                                *Direcci&oacute;n:
+                                Direcci&oacute;n:
                             </td>  
                             <td colspan="5">
                                 <input name="direccion" id="direccion" size="60" value="<?php echo $direccion;?>">
@@ -144,7 +144,15 @@
                         </tr>
                         <tr>
                             <td class="table-success">
-                                *Diagn&oacute;stico:
+                                Destino:
+                            </td>  
+                            <td colspan="5">
+                                <input name="destino" id="destino" size="60" value="<?php echo $destino;?>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success">
+                                Diagn&oacute;stico:
                             </td>  
                             <td colspan="5">
                                 <textarea id="diagnostico" name="diagnostico" rows="4" cols="63"><?php echo $diagnostico;?></textarea>
